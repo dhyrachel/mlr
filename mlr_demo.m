@@ -4,6 +4,7 @@ function mlr_demo()
     load Wine;
 
     % z-score the input dimensions
+    % shape of data should be (n, d); so the data have 0 mean, standard deviation 1
     display('z-scoring features');
     X = zscore(X')';
 
