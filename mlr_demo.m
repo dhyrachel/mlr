@@ -11,6 +11,7 @@ function mlr_demo()
     [d,n] = size(X);
     
     % Generate a random training/test split
+    % a rough way to splite the data
     display('Generating a 80/20 training/test split');
     P       = randperm(n);
     Xtrain  = X(:,P(1:floor(0.8 * n)));
